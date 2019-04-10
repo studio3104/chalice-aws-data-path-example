@@ -1,0 +1,12 @@
+{
+  "version": "2.0",
+  "app_name": "chalice-aws-data-path-example",
+  "stages": {
+    "dev": {
+      "api_gateway_stage": "api",
+      "environment_variables": {
+        "AWS_DATA_PATH": "${LAMBDA_TASK_ROOT}/chalicelib/.aws/models"
+      }
+    }
+  }
+}
